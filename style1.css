@@ -1,0 +1,26 @@
+body{
+	background-color:#FCF2F0;
+	margin:0;
+}
+
+#WcLogo{
+width:50%;
+
+}
+
+#WrapRealTimeText{
+	text-align:center;
+	position:absolute;
+	margin-top:50%;
+	font-size:20px;
+}
+
+#wcWrapper{
+	background-color:green;
+	align-items:center;
+	justify-content:center;
+	display:flex;
+	margin:0 auto;
+	height:100%;
+	width:100%;
+}
