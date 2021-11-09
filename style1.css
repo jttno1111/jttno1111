@@ -1,5 +1,5 @@
 body{
-	background-color:#FCF2F0;
+	background-color:white;
 	margin:0;
 }
 
@@ -13,10 +13,13 @@ width:50%;
 	position:absolute;
 	margin-top:50%;
 	font-size:20px;
+	color:#636466;
+	font-weight:700;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 #wcWrapper{
-	background-color:green;
+	background-color:white;
 	align-items:center;
 	justify-content:center;
 	display:flex;
