@@ -3,7 +3,7 @@
 	height:7%;
 	border:1px solid green;
 	margin:0 auto;
-	display:flex;
+	display:block;
 	align-items:center;
 }
 
