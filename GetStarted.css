@@ -61,13 +61,22 @@ height:28%;
 }
 
 .GS-box-buttons{
+	position:relative;
 	margin: 15px 0px 0px 0px;
 	padding: 0px 20px 0px 20px;
+	display:inline-block;
+	width:100%;
+}
+
+
+
+.GS-box-btn{
+
+
 }
 
 .GS-btn{
-	background-color:red;
-	opacity:0.5;
+	background-color:#4285F4;
 	border-radius:2px;
 	color:white;
 	border:none;
@@ -79,8 +88,17 @@ height:28%;
 	margin: 0px 0px 7px 0px;
 }
 
+#btn-signUp{
+	background-color:white;
+	border:1px solid #4285F4;
+	color:#4285F4;
+}
+
+
+
 #or{
 	text-align:center;
 	color:gray;
-	
+	width:100%;
+	position:relative;
 }
