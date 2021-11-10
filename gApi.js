@@ -8,7 +8,6 @@ function onSignIn(googleUser) {
 }
 
 
-}
 
 
 function signOut() {

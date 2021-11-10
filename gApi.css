@@ -1,11 +1,11 @@
 .g-signin2 {
-	width:100%;
+	width:40%;
 	height:7%;
 	border:1px solid green;
+	margin:0 auto;
 }
 
 .Box-gSign-in{
-	height:30%;
 	border:1px solid red;
 	padding: 0px 20px 0px 20px;
 }
