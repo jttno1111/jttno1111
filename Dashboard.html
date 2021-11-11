@@ -22,16 +22,29 @@
 
 
 
+    <div class="data">
+        <p>Image</p>
+        <img id="image" class="rounded-circle" width="100" height="100" />
+        <p>Email</p>
+        <p id="email"></p>
+        <button type="button" class="btn btn-danger" onclick="signOut();">Sign Out</button>
+    </div>
+
 
 
 </div>
+
+
+
+
 </body>
 
 <script>
-document.getELementById("name").text = window.localStorage.getItem('name');
+document.getElementById("name").text = window.localStorage.getItem('name');
+document.getElementById("email").text = window.localStorage.getItem('email');
+document.getElementById("image").text = window.localStorage.getItem('image');
 
-
-window.localStorage.getItem('email');
-window.localStorage.getItem('image');
+//window.localStorage.getItem('email');
+//window.localStorage.getItem('image');
 </script>
 </html>
