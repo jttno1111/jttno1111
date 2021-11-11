@@ -16,13 +16,15 @@
 	<div class = "header-wrapper">
 		<img src="rtbt_img/menu.png" id="menu-icon"  alt="menu" />
 		<label style="margin-left:7px;" class = "wc-user">Welcome to RTBC</label>
-		<label class = "wc-user" id="name" > username!</label>
+		<label class = "wc-user"  > username!</label>
 		<img src="rtbt_img/sampleProfile.png" id="image" class="rounded-circle" alt="profile" />
 	</div>
 
 
 
     <div class="data">
+		<p>Name</p>
+        <p id="name"></p>
         <p>Image</p>
         <img id="image" class="rounded-circle" width="100" height="100" />
         <p>Email</p>
@@ -39,12 +41,11 @@
 
 </body>
 
+<script src="gApi.js" async defer></script>
 <script>
-document.getElementById("name").text = window.localStorage.getItem('name');
-document.getElementById("email").text = window.localStorage.getItem('email');
-document.getElementById("image").text = window.localStorage.getItem('image');
 
-//window.localStorage.getItem('email');
-//window.localStorage.getItem('image');
+	document.getElementById("name").innerHTML = localStorage.getItem('name');
+	document.getElementById("email").innerHTML = localStorage.getItem('email');
+
 </script>
 </html>
