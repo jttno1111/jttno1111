@@ -282,7 +282,6 @@ display: block;
 .secondary-right-box{
 	width:100%;
 	height:100%;
-	display:visible;
 	display:flex;
 	align-items:center;
 }
@@ -290,6 +289,11 @@ display: block;
 .divBody{
 	width:100%;
 	height:100%;
+}
+
+
+#upAndDelFormBox{
+	display:none;
 }
 
 
@@ -322,7 +326,7 @@ display: block;
 }
 
 
-#descrip-id,#descrip-right-box-lib{
+#descrip-id,.descrip-right-box-lib{
 	color:#ae804c;
 	font-size:12px;
 }
@@ -363,7 +367,7 @@ display: block;
 	
 }
 
-#descrip-right-box-lib{
+.descrip-right-box-lib{
 	font-size:18px;
 	font-weight:600;
 	padding-top:5%;
@@ -419,4 +423,45 @@ display: block;
 	width:8%;
 	float:right;
 	margin:5%;
+}
+
+.addLibManFormBox{
+	height:80%;
+	width:85%;
+	margin:0 auto;
+}
+
+
+.inputBox{
+	background-color:white;
+	padding-left:20px;
+	color:#ae804c;
+	height:8%;
+	width:80%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+}
+
+.noteAccountCreation{
+	font-size:14px;
+	padding:10px;
+	margin-top:5%;
+}
+
+.accCreationBtnBox{
+	margin:0 auto;
+	width:85%;
+}
+
+.btnSave{
+	height:8%;
+	width:80%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+	background-color:#bd9d80;
+	color:white;
 }
