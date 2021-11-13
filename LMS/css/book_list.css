@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/bakso-sapi');
+
+.dashboard{
+    margin-top: 1%;
+    margin-left: 17%;
+    height: 100%;
+}
+
+.topnav{
+    width: 98.5%;
+    height: 7%;
+    background-color: #e0d2c2;
+    overflow: auto;
+    border-radius: 15px 15px 15px 15px;
+}
+
+table {
+  margin-top: 2%;
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.icon{
+    height: 35px;
+    width: 35px;
+    margin-left: 6%;
+    margin-top: -2.8%;
+}
+
+#myInput {
+  width: 20%;
+  font-size: 16px;
+  padding: 12px 20px 12px 70px;
+  border: 1px solid #ae804c;
+  border-radius:25px 25px 25px 25px;
+  margin-left: 5%;
+  margin-top: .5%;
+  display: block;
+}
+
+.display{
+  width: 14%;
+  flex-wrap: wrap;
+  list-style: none;
+  align-content: center;
+  cursor: pointer;
+  display: block;
+  background-color: #bd9d80;
+  padding: 13px 13px 13px 13px;
+  color: white;  
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: -3.2%;
+  margin-left: 26%;
+  text-align: center;
+}
+
+
+.display:hover{
+    background-color:#ae804c;
+    box-shadow: 0 2.5px  #936037;
+    transform: translateY(.5px);
+    cursor: pointer;
+}
+
+
+
+.iconbutton{
+    margin-top: -3.2%;
+    margin-left: 80%;
+}
+
+.iconbtn {
+  background-color: #bd9d80;
+  border: none; 
+  color: white; 
+  width: 20%;
+  height: 75%;
+  font-size: 16px; 
+  cursor: pointer; 
+  border-radius: 50%;
+  margin-left: 3%;
+  transition: all 0.3s ease;
+    
+}
+
+
+.iconbtn:hover {
+    box-shadow: 0 2.5px  #936037;
+    transform: translateY(.5px);
+    cursor: pointer;
+  background-color:#ae804c; 
+}
+
+
+
+#myTable {
+  border-collapse: collapse;
+  width: 98.5%;
+  border: 1px solid #ae804c;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: center;
+  padding: 12px;
+}
+
+#myTable tr {
+    background-color: #fcfcfa;
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f7f2ec;
+}
+
+#myTable tr.header{
+    width: 98.5%;
+    background-color: #bd9d80; 
+    color: white;
+}
+
+
+.formbtm{
+    width: 45%;
+    height: 42%;
+    background-color: #e0d2c2;
+    border-radius:15px 15px 15px 15px;
+    overflow: auto;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+
+label{
+    margin-left: 25%;
+    margin-top: 30px;
+    display: block;
+    font-family: 'Bakso Sapi', sans-serif;
+    color: #bd9d80;
+    font-size: 25px;
+}
+
+.inp{
+    width: 40%;
+    height: 12%;
+    border-radius:25px 25px 25px 25px;
+    padding-left: 15px;
+    margin-top: 27px;
+    margin-left: 48px;
+    border: none;
+    font-size: 15px;
+}
+
+
+.rec{
+  width: 40%;
+  flex-wrap: wrap;
+  list-style: none;
+  align-content: center;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #bd9d80;
+  padding: 13px 13px 13px 13px;
+  color: white;  
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 4%;
+  margin-left: 48px;
+}
+
+
+.rec:hover{
+    background-color:#ae804c;
+    box-shadow: 0 2.5px  #936037;
+    transform: translateY(.5px);
+    cursor: pointer;
+}
+
