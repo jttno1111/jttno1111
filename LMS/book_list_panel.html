@@ -2,7 +2,7 @@
 <head>
 <title> Library Management System </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="addedCss/Admin_Dashboard.css">
+<link rel="stylesheet" href="addedCss/book_list_panel.css">
 <link rel="stylesheet" href="css/allMin.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
@@ -39,7 +39,7 @@
 			  </div>
 			</div>
 			<div class="dropdown">
-			  <button class="btnMenu">Librarian ▼</button>
+			  <button class="btnMenu" onclick = "LibrarianPanel()">Librarian ▼</button>
 			  <div class="dropdown-content">
 			  <a href="#">Librarian's Record</a>
 			  <a href="#">Archived Librarians</a>
@@ -47,7 +47,7 @@
 			  </div>
 			</div>
 			<div class="dropdown">
-			  <button class="btnMenu"   onclick = "bookListPanel()">Book ▼</button>
+			  <button class="btnMenu">Book ▼</button>
 			  <div class="dropdown-content">
 			  <a href="#">List of Books</a>
 			  <a href="#">Book Transactions</a>
@@ -86,8 +86,9 @@
 	<div class = "dashboardBody">
 	
 		<div class = "secondaryDashboardBody">
+		
 				<div class= "header-box">
-				<div class="panelHeader">Dashboard/librarian</div>
+				<div class="panelHeader">Dashboard/books</div>
 				<img id="IcoSettings" src="https://img.icons8.com/cotton/50/000000/settings--v1.png"/>
 				</div>
 			<div class="topNavBox">
@@ -97,16 +98,16 @@
 					<button class="iconBtn"><i class="fa fa-bell fa-lg"></i></button>
 					<button class="iconBtn"><i class="fa fa-users fa-lg"></i></button>
 				</div>
-				<div class = "drpDwnBtnMng" onclick="LibMngDrpDwn()">Manage ▼</div>
+				<div class = "drpDwnBtnMng" onclick="bookMngDrpDwn()">Manage ▼</div>
 				<div class="action-to-drpDwnMng" id = "actionToDrpDwn">
-					<button class = "drpDwnBtn" onclick = "addLibMan()">Add Librarian</button><br>
-					<button class = "drpDwnBtn" onclick = "updateNarchive()">Update / Archive</button><br>
+					<button class = "drpDwnBtn" onclick = "addBookMan()">Add books</button><br>
+					<button class = "drpDwnBtn" onclick = "updateNarchive()">Update / Archive books</button><br>
 				</div>
 				
 				<div class="searchBar">
 				
 					
-					<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." title="Type in a name">
+					<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." title="Search for details">
 					<img src="img/seachicon.png" class="searchIcon">
 				</div> 
 			
@@ -120,78 +121,89 @@
 			<table id="myTable">
 				
                   <tr class="header">
-                    <th style="width:15%;">LIBRARIAN ID</th>
-                    <th style="width:15%;">LAST NAME</th>
-                    <th style="width:15%;">FIRST NAME</th>
-					<th style="width:15%;">MOBILE NUNBER</th>
-                    <th style="width:30%;">EMAIL</th>
-                    <th style="width:25%;">PASSWORD</th>
+                    <th>Book ID</th>
+                    <th>Book Name</th>
+					<th>Category </th>
+                    <th>Price</th>
+                    <th>Date of publish</th>
+					<th>Author name</th>
+					<th>Language</th>
+					
                   </tr>
                 
                   <tr>
-                    <td>ID number</td>
+                    <td>SampleBook123</td>
                     <td>sample</td>
                     <td>sample</td>
                     <td>sample</td>
                     <td>sample</td>
+					<td>sample</td>
 					<td>sample</td>
                   </tr>
 				  <tr>
-                    <td>ID number</td>
+                    <td>SampleBook123</td>
                     <td>sample</td>
                     <td>sample</td>
                     <td>sample</td>
                     <td>sample</td>
+					<td>sample</td>
 					<td>sample</td>
                   </tr><tr>
-                    <td>ID number</td>
+                    <td>SampleBook123</td>
                     <td>sample</td>
                     <td>sample</td>
                     <td>sample</td>
                     <td>sample</td>
+					<td>sample</td>
 					<td>sample</td>
                   </tr><tr>
-                    <td>ID number</td>
+                    <td>SampleBook123</td>
+                    <td>sample</td>
+                    <td>sample</td>
                     <td>sample</td>
                     <td>sample</td>
 					<td>sample</td>
-                    <td>sample</td>
-                    <td>sample</td>
+					<td>sample</td>
                   </tr><tr>
-                    <td>ID number</td>
+                    <td>SampleBook123</td>
+                    <td>sample</td>
+                    <td>sample</td>
                     <td>sample</td>
                     <td>sample</td>
 					<td>sample</td>
-                    <td>sample</td>
-                    <td>sample</td>
+					<td>sample</td>
                   </tr><tr>
-                    <td>ID number</td>
+                    <td>SampleBook123</td>
+                    <td>sample</td>
+                    <td>sample</td>
                     <td>sample</td>
                     <td>sample</td>
 					<td>sample</td>
-                    <td>sample</td>
-                    <td>sample</td>
+					<td>sample</td>
                   </tr><tr>
-                    <td>ID number</td>
+                    <td>SampleBook123</td>
+                    <td>sample</td>
+                    <td>sample</td>
                     <td>sample</td>
                     <td>sample</td>
 					<td>sample</td>
-                    <td>sample</td>
-                    <td>sample</td>
+					<td>sample</td>
                   </tr><tr>
-                    <td>ID number</td>
+                    <td>SampleBook123</td>
+                    <td>sample</td>
+                    <td>sample</td>
+                    <td>sample</td>
                     <td>sample</td>
 					<td>sample</td>
-                    <td>sample</td>
-                    <td>sample</td>
-                    <td>sample</td>
+					<td>sample</td>
                   </tr><tr>
-                    <td>ID number</td>
+                    <td>SampleBook123</td>
+                    <td>sample</td>
+                    <td>sample</td>
                     <td>sample</td>
                     <td>sample</td>
 					<td>sample</td>
-                    <td>sample</td>
-                    <td>sample</td>
+					<td>sample</td>
                   </tr>
 
 				</table>
@@ -211,25 +223,26 @@
 				<div class="contentDivBody">
                                                     <div id = "">
 														<img src="img/close.png" id = "closeIcon" onclick = "closeRightBox()" />
-														<div class = "descrip-right-box-lib">Update or Archive records</div>
-														<div id = "descrip-id">LIBRARIAN ID:</div>
+														<div class = "descrip-right-box-book">Update or Archive Book record</div>
+														<div id = "descrip-id">Book ID:</div>
                                                         <div class="searchIdBox">
-															<input type="text" id="searchIdInput" onkeyup="myFunction()" placeholder="Type librarian-ID" title="Type ID">
+															<input type="text" id="searchIdInput" onkeyup="myFunction()" placeholder="Type Book-ID" title="Type ID">
 														</div> 
 														<hr/>
 														
 														<div class="input-elem-box">
-                                                        <input placeholder="First name" class = "libDetail" id= "fn" type="text" />
-                                                        <input placeholder="Last name" class = "libDetail" id= "ln" type="text" />
-														<input placeholder="Mobile number" class = "libDetail" id= "" type="text"/>
-                                                        <input placeholder="Email" class = "libDetail" id= "" type="email"/>
-                                                        <input placeholder="Password" class = "libDetail" id= "" type="text"/>
+                                                        <input placeholder="Book name" class = "inputBookDetails" id= "" type="text" />
+                                                        <input placeholder="Category" class = "inputBookDetails" id= "" type="text" />
+                                                        <input placeholder="Price" class = "inputBookDetails" id= "" type="email"/>
+                                                        <input placeholder="Date of publish" class = "inputBookDetails" id= "" type="text"/>
+														<input placeholder="Author name" class = "inputBookDetails" id= "" type="text"/>
+														<input placeholder="Language" class = "inputBookDetails" id= "" type="text"/>
 														</div>
 														
 														
-														<div class="box-btns-for-lib">
-														<input value="Update Record" class = "btnUpdate" id= "" type="button"/><br>
-														<input value="Archive Record" class = "btnArchive" id= "" type="button"/>
+														<div class="box-btns-for-book">
+														<input value="Update Book Record" class = "btnUpdate" id= "" type="button"/><br>
+														<input value="Archive Book Record" class = "btnArchive" id= "" type="button"/>
 														</div>
                                                     </div>
 
@@ -237,27 +250,26 @@
 
 			</div>
 			
-<!--------------------------------------------------------LIBRARIAN-FORM--------------------------------------------------------------->
+<!-------------------------------------------------------ADD-BOOK---------------------------------------------------------------->
 
 
-			<div class="divBody" id = "accCreationBox">
+			<div class="divBody" id = "bookCreationBox">
 				<div class = "contentDivBody">
 					<div>
 						<img src="img/close.png" id = "closeIcon" onclick = "closeRightBox()" />
-						<div class = "descrip-right-box-lib">Add Librarian</div>
+						<div class = "descrip-right-box-book">Add Book</div>
 						
-						<div class = "addLibManFormBox">
+						<div class = "addBookFormBox">
 						
-							<input placeholder="First name" class = "inputBox" id= "fn" type="text" />
-                            <input placeholder="Last name" class = "inputBox" id= "ln" type="text" />
-							<input placeholder="Mobile number" class = "inputBox" id= "" type="text"/>
-							<div class = "noteAccountCreation">Note:<br> Email and password will be used <br>when signing in</div>
-                            <input placeholder="Email" class = "inputBox" id= "" type="email"/>
-                            <input placeholder="Password" class = "inputBox" id= "" type="text"/>
-							<input placeholder="Confirm password" class = "inputBox" id= "" type="text"/>
+							<input placeholder="Book name" class = "inputBox" id= "fn" type="text" />
+                            <input placeholder="Category" class = "inputBox" id= "ln" type="text" />
+							<input placeholder="Price" class = "inputBox" id= "" type="text"/>
+                            <input placeholder="Date of publish" class = "inputBox" id= "" type="email"/>
+                            <input placeholder="Author" class = "inputBox" id= "" type="text"/>
+							<input placeholder="Language" class = "inputBox" id= "" type="text"/>
 						</div>
 						
-						<div class="accCreationBtnBox">
+						<div class="bookCreationBtnBox">
 							<input value="Save" class = "btnSave" id= "" type="button"/><br>
 						</div>
 					</div>
@@ -272,7 +284,7 @@
 
                
 </body>
-    <script src="js/Admin_Dashboard.js"></script>
+    <script src="js/book_list_panel.js"></script>
 
 	                <script>
                     function myFunction() {

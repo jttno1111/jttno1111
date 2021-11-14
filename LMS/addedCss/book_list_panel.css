@@ -307,7 +307,7 @@ display: block;
 
 
 
-.libDetail{
+.inputBookDetails{
 	background-color:white;
 	padding-left:20px;
 	color:#ae804c;
@@ -318,7 +318,7 @@ display: block;
 	color:white;
 }
 
-.libDetail, .btnUpdate, .btnArchive{
+.inputBookDetails, .btnUpdate, .btnArchive{
 	height:8%;
 	width:80%;
 	border:none;
@@ -328,7 +328,7 @@ display: block;
 }
 
 
-#descrip-id,.descrip-right-box-lib{
+#descrip-id,.descrip-right-box-book{
 	color:#ae804c;
 	font-size:12px;
 }
@@ -337,7 +337,7 @@ display: block;
 	padding-left:10px;
 }
 
-.box-btns-for-lib{
+.box-btns-for-book{
 	padding-top:20%;
 	margin:0 auto;
 	width:85%;
@@ -369,7 +369,7 @@ display: block;
 	
 }
 
-.descrip-right-box-lib{
+.descrip-right-box-book{
 	font-size:18px;
 	font-weight:600;
 	padding-top:5%;
@@ -427,7 +427,7 @@ display: block;
 	margin:5%;
 }
 
-.addLibManFormBox{
+.addBookFormBox{
 	height:80%;
 	width:85%;
 	margin:0 auto;
@@ -446,13 +446,8 @@ display: block;
 	outline:none;
 }
 
-.noteAccountCreation{
-	font-size:14px;
-	padding:10px;
-	margin-top:5%;
-}
 
-.accCreationBtnBox{
+.bookCreationBtnBox{
 	margin:0 auto;
 	width:85%;
 }
@@ -467,7 +462,6 @@ display: block;
 	background-color:#bd9d80;
 	color:white;
 }
-
 .panelHeader{
 	font-size:30px;
 	font-weight:800;

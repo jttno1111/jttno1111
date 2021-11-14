@@ -1,12 +1,10 @@
-var primaryRightBox = document.getElementById("primary-right-box");
-var primaryBoxdisplay = getComputedStyle(primaryRightBox).display;
-var drpdwnbox = document.getElementById("actionToDrpDwn");
-var UpDelBox = document.getElementById("upAndDelFormBox");
-var AccCreateBox = document.getElementById("accCreationBox");
+var primaryRightBox = document.getElementById("primary-right-box"),
+	primaryBoxdisplay = getComputedStyle(primaryRightBox).display,
+	drpdwnbox = document.getElementById("actionToDrpDwn"),
+	UpDelBox = document.getElementById("upAndDelFormBox"),
+	AccCreateBox = document.getElementById("bookCreationBox");
 
-
-
-function LibMngDrpDwn(){
+function bookMngDrpDwn(){
 var display = getComputedStyle(drpdwnbox).display;
 
 	if(display == "none")
@@ -15,7 +13,10 @@ var display = getComputedStyle(drpdwnbox).display;
 		drpdwnbox.style.display = "none";	
 }
 
+
+
 function updateNarchive(){
+
 	if(primaryBoxdisplay == "none"){
 		primaryRightBox.style.display = "block";
 		drpdwnbox.style.right = "33%";
@@ -26,13 +27,10 @@ function updateNarchive(){
 		AccCreateBox.style.display = "none";
 		
 	}
-	
-	
 	drpdwnbox.style.display = "none";
 }
 
-
-function addLibMan(){
+function addBookMan(){
 	if(primaryBoxdisplay == "none"){
 		primaryRightBox.style.display = "block";
 		drpdwnbox.style.right = "33%";
@@ -43,7 +41,6 @@ function addLibMan(){
 		AccCreateBox.style.display = "block";
 		
 	}
-	
 	drpdwnbox.style.display = "none";
 }
 
@@ -54,7 +51,7 @@ function closeRightBox(){
 	
 }
 
-
-function bookListPanel(){
-	window.location.href="book_list_panel.html";
+function LibrarianPanel(){
+	window.location.href="Admin_Dashboard.html";
 }
+
