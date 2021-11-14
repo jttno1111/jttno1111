@@ -39,7 +39,6 @@ function addBookMan(){
 	}else{
 		UpDelBox.style.display = "none";
 		AccCreateBox.style.display = "block";
-		
 	}
 	drpdwnbox.style.display = "none";
 }
