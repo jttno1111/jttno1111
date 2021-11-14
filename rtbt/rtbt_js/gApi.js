@@ -8,7 +8,7 @@ function onSignIn(googleUser) {
 	$(".data").css("display", "block");
 	$("#name").text(profile.getName());
     $("#email").text(profile.getEmail());
-    $(".image").attr('src', profile.getImageUrl());
+    $("#image").attr('src', profile.getImageUrl());
 
 }
 
