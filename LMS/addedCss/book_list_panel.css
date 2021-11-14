@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/bakso-sapi');
+
+body{
+	margin:0;
+	font-family: 'Poppins', sans-serif;
+	background-color:whitesmoke;
+}
+
+.dashboardWrapper{
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.slideMenuBar{
+	width:20%;
+	height:100%;
+	background-color:#e0d2c2;
+	padding-top:2%;
+}
+
+.dashboardBody{
+	width:80%;
+	height:100%;
+}
+
+.secondaryDashboardBody{
+	height:97%;
+	width:98%;
+	margin: 0 auto;
+	margin-top:1%;
+}
+
+
+.topNavBox{
+	height:7%;
+	width:97%;
+	background-color:#e0d2c2;
+	border:none;
+	border-radius:10px;
+	display:flex;
+	align-items:center;
+}
+
+#myTable{
+	width:100%;
+	margin-top:1%;
+	border-collapse: collapse;
+	border-radius: 1em;
+	overflow: hidden;
+	border: 1px solid #ae804c;
+	font-size: 14px;
+	width: 98.5%;
+}
+
+.tbScroll {
+    overflow:scroll;
+	height:85%;
+}
+
+
+#myTable th, #myTable td {
+  text-align: center;
+  padding: 12px;
+}
+
+#myTable tr {
+  background-color: #fcfcfa;
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f7f2ec;
+}
+
+#myTable tr.header{
+    width: 98.5%;
+    background-color: #bd9d80;
+    color: white;
+}
+
+
+.logo{
+	width: 50%;
+	cursor: pointer;
+	display:block;
+	margin:0 auto;
+}
+
+
+.profile-box{
+
+}
+
+
+.nav1-info-box{
+	margin-top:5%;
+	background-color:#e7ded3;
+	height:15%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+#nav2-info-box-pic{
+	height:100%;
+	width:30%;
+	display:flex;
+	align-items:center;
+	justify-content:left;
+}
+
+#nav2-info-box-text{
+	width:70%;
+	font-size:12px;
+	color:black;
+	font-weight:600;
+	margin-left:-2%;
+}
+
+
+#name, #email{
+	font-weight:500;
+	font-size:11px;
+	
+}
+
+.nav2-info-box div{
+	max-height:25%;
+}
+
+.navProfilePic{
+	border-radius: 50%;
+	width:80%;
+	margin-left:5%;
+}
+
+
+.btnsMenuBox{
+	height:50%;
+	
+}
+
+.btnMenu, .log{
+	background-color: #bd9d80;
+  padding: 10px 15px 10px 10px;
+  align-content: center;
+  display:block;
+  cursor: pointer;
+	border-radius:40px;
+	border:none;
+	width:70%;
+	color:white;
+	font-weight:600;
+	margin:5%;
+}
+
+.btnMenu:hover, .log:hover{
+	  color: white;
+  background-color:#ae804c;
+  box-shadow: 0 2.5px  #936037;
+  transform: translateY(2.5px); 
+  cursor: pointer;
+}
+
+.log{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:65%;
+	height:8%;
+	padding:5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    width: 60%;
+    align-content: center;
+    overflow: auto;
+    border-radius: 25px;
+    margin-left: 15%;
+    margin-top: 2%;
+	}
+	.dropdown-content a {
+		display: block;
+		color: white;
+		padding: 5px;
+		text-decoration: none;
+		font-size:12px;
+	}
+	.dropdown-content a:hover {
+		color: white;
+		background-color:#ae804c;
+	}
+	
+	
+
+.dropdown:hover .dropdown-content {
+display: block;
+    color: white;
+	background-color: #bd9d80;
+  box-shadow: 0 2.5px  #936037;
+  transform: translateY(2.5px); 
+  cursor: pointer;
+  box-shadow: 0 2.5px  #936037;
+  transform: translateY(2.5px); 
+}
+
+
+
+.searchBar{
+	display:flex;
+	align-align-items:center;
+	justify-content:center;
+	width:20%;
+	height:75%;
+	padding:5px;
+	margin-left:0%;
+	position:relative;
+}
+
+.iconsBtnBox{
+	width:14%;
+	display:flex;
+	align-align-items:center;
+	justify-content:center;
+	height:97%;
+	position:relative;
+	margin-left:10px;
+}
+
+.iconBtn{
+	margin:5px;
+	border-radius:50%;
+	border:none;
+	height:80%;
+	width:50px;
+	background-color: #bd9d80;
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
+	transition: all 0.3s ease;
+	}.iconBtn:hover
+		{
+	    box-shadow: 0 2.5px  #936037;
+		transform: translateY(.5px);
+		cursor: pointer;
+		background-color:#ae804c; 
+		}
+
+
+#myInput{
+	height:95%;
+	width:100%;
+	border-radius:30px;
+	border:1px solid #bd9d80;
+	padding:5px;
+	padding-left:20px;
+}
+#myInput:focus{
+	outline:0.1px solid brown;
+}
+
+.searchIcon{
+	height:55%;
+	position:absolute;
+	right:15;
+	margin-top:1.1%;
+}
+
+.primary-right-box{
+	width:30%;
+	background-color:#e0d2c2;
+	border-left:1px solid #bd9d80;
+	height:100%;
+	display:none;
+}
+
+
+.secondary-right-box{
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items:center;
+}
+
+.divBody{
+	width:100%;
+	height:100%;
+}
+
+
+#upAndDelFormBox{
+	display:none;
+}
+
+
+.contentDivBody{
+	height:80%;
+	width:100%;
+	margin:0 auto;
+}
+
+
+
+.inputBookDetails{
+	background-color:white;
+	padding-left:20px;
+	color:#ae804c;
+}
+
+.btnUpdate, .btnArchive{
+	background-color:#bd9d80;
+	color:white;
+}
+
+.inputBookDetails, .btnUpdate, .btnArchive{
+	height:8%;
+	width:80%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+}
+
+
+#descrip-id,.descrip-right-box-book{
+	color:#ae804c;
+	font-size:12px;
+}
+
+#descrip-id{
+	padding-left:10px;
+}
+
+.box-btns-for-book{
+	padding-top:5%;
+	margin:0 auto;
+	width:85%;
+}
+
+.searchIdBox{
+	height:8%;
+	width:80%;
+	margin-bottom:5%;
+}
+
+.searchIdIcon{
+	height:50%;
+	
+}
+
+#searchIdInput{
+	height:100%;
+	width:100%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+	background-color:white;
+	padding-left:20px;
+	color:#ae804c;
+	
+	
+	
+}
+
+.descrip-right-box-book{
+	font-size:18px;
+	font-weight:600;
+	padding-top:5%;
+	padding-left:5%;
+	padding-bottom:9%;
+}
+
+.input-elem-box{
+	width:85%;
+	margin:0 auto;
+	margin-top:5%;
+}
+
+.drpDwnBtnMng{
+	width:13%;
+	height:75%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color: #bd9d80;
+	border-radius:40px;
+	color:white;
+	cursor:pointer;
+	font-size:12px;
+	margin-left:50%;
+}
+
+.action-to-drpDwnMng{
+	top:19%;
+	right:15%;
+	position:absolute;
+	width:10%;
+	height:6%;
+	background-color: #e0d2c2;
+	border-radius:10px;
+	display:none;
+}
+
+.drpDwnBtn{
+	width:100%;
+	height:100%;
+	border:none;
+	color:#ae804c;
+	background-color:#e0d2c2;
+}
+
+.drpDwnBtn:hover{
+	color:#e0d2c2;
+	background-color:#ae804c;
+}
+
+#closeIcon{
+	width:8%;
+	float:right;
+	margin:5%;
+}
+
+.addBookFormBox{
+	height:80%;
+	width:85%;
+	margin:0 auto;
+}
+
+
+.inputBox{
+	background-color:white;
+	padding-left:20px;
+	color:#ae804c;
+	height:8%;
+	width:80%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+}
+
+
+.bookCreationBtnBox{
+	margin:0 auto;
+	width:85%;
+}
+
+.btnSave{
+	height:8%;
+	width:80%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+	background-color:#bd9d80;
+	color:white;
+}
+.panelHeader{
+	font-size:30px;
+	font-weight:800;
+	color:#bd9d80;
+	margin-top:1%;
+	margin-bottom:1%;
+}
+
+.header-box{
+	display:flex;
+	align-items:center;
+	width:100%;
+	position:relative;
+}
+
+#IcoSettings{
+	position:absolute;
+	color:red;
+	display:block;
+	margin-left:91%;
+}

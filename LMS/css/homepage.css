@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/bakso-sapi');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+
+
+
+body{
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+.bg{
+    width: 100%;
+    height: auto;
+    background-size: contain;
+}
+
+.started{
+    background-color: #e7ded3;
+    font-family: 'Bakso Sapi', sans-serif;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #936037;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    margin-top: -10%;
+    margin-left: 22%;
+    width: 18%;
+    text-align: center;
+}
+
+.started:hover{
+    background-color: #ae804c;
+    color: white;}
+
+
+.started:active  {
+    background-color: #ae804c;
+    box-shadow: 0 5px #936037;
+    transform: translateY(4px);
+}
+
+
+.startedn:focus {
+    background-color: #ae804c;
+    box-shadow: 0 5px #936037;
+    transform: translateY(4px);
+    color: white;
+}
+
+
+.login-btn{
+    background-color: #e7ded3;
+    font-family: 'Bakso Sapi', sans-serif;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #936037;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    margin-top: -10%;
+    margin-left: 65%;
+    width: 10%;
+    text-align: center;
+}
+
+
+.login-btn:hover{
+    background-color: #ae804c;
+    color: white;
+}
+
+
+.login-btn:active  {
+    background-color: #ae804c;
+    box-shadow: 0 5px #936037;
+    transform: translateY(4px);
+}
+
+
+.login-btn:focus {
+    background-color: #ae804c;
+    box-shadow: 0 5px #936037;
+    transform: translateY(4px);
+    color: white;
+}
+
+.logcont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.logpopup{
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.logpopcont{
+    height: 600px;
+    width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.button{
+    background: white;
+    padding: 10px 15px;
+    color: wheat;
+}
+
+
+#secondaryBox{
+    height: 100%;
+}
+
+
+#boxGetStarted{
+	margin:0 auto;
+	width:80%;
+}
+	#getStartedBtn{
+		width:100%;
+		height:7%;
+		border-radius:100px;
+		border:none;
+		background-color:#cca16a;
+		font-family: "Monaco", monospace;
+		color:white;
+		font-size:100%;
+	}
+
+
+#signInText{
+	font-weight:630;
+	font-size:30px;
+    color:#cca16a;
+}
+
+
+#signInCaption{
+	color:#606770;
+}
+
+
+#topSeparator{
+	height:0.20%;
+	width:96%;
+	background-color: darkgray;
+	z-index:1;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+
+#lgnFrmBox{
+	margin:0 auto;
+	width:80%;
+	margin-top:40%;
+}
+
+
+#boxLgnBtn{
+	margin-top:15%;
+}
+
+
+#lgnBtn{
+	width:100%;
+	height:8%;
+	background-color:#cca16a;
+	color:whitesmoke;
+	border:none;
+	border-radius:2px;
+    font-size: 20px;
+    font-family: 'Bakso Sapi', sans-serif;
+	padding:5px;
+}
+
+
+#lgnBtn:hover{
+	width:100%;
+	height:8%;
+	background-color:#946038;
+	color:whitesmoke;
+	border:none;
+	border-radius:2px;
+}
+
+
+.dontHaveAccountText{
+	margin-top:7%;
+	margin-bottom:3%;
+	text-align:center;
+	border-radius:2px;
+	border:1px solid #cca16a;
+	width:100%;
+	height:6.5%;
+	padding:5px;
+    color: #cca16a;
+    display: inline-block;
+}
+
+.dontHaveAccountText:hover{
+	background-color:#946038;
+    border: none;
+    color: white;
+    
+}
+
+
+.slidershow{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.middle{
+  position: relative;
+  top:25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.navigation{
+  position: relative;
+  left: 90%;
+  transform: translateX(-50%);
+  display: flex;
+  
+}
+
+
+.bar{
+  width: 80%;
+	height:8%;
+	background-color:#cca16a;
+	color:whitesmoke;
+	border:none;
+	border-radius:2px;
+    font-size: 20px;
+    font-family: 'Bakso Sapi', sans-serif;
+    margin-top: 1%;
+    margin-left: -30%;
+}
+
+
+.bar:hover{
+	width:80%;
+	height:8%;
+	background-color:#946038;
+	color:whitesmoke;
+	border:none;
+	border-radius:2px;
+}
+
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+    color: #cca16a;
+}
+
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+
+
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+
+
+#switchToLibrarian{
+    margin-left: -40%;
+    margin-top: 1.5%;
+    width: 100%;
+}
+
+
+.signUpInput{
+    border: 2px;
+    border-bottom-color: darkgray;
+}
+
+
+#bgBlocker{
+	position:absolute;
+	background-color:black;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	opacity:0.5;
+	visibility:hidden;
+}
+
+#popBox{
+    height: 680px;
+    width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+	position:absolute;
+	top:0%;
+	left:0%;
+	border-radius:2px;
+	padding-top:10px;
+	visibility:hidden;
+}
+
+
+#boxSignUpText{
+	width:auto;
+	height:14%;
+	margin-left:4%;
+	margin-right:4%;
+    margin-top: 2.5%;
+    color: #cca16a;
+}
+
+
+#boxSignUpForm{
+	width:auto;
+	height:auto;
+	margin-left:4%;
+	margin-right:4%;
+    margin-top: 6%;
+}
+
+
+#signUpText{
+	font-weight:630;
+	font-size:30px;
+}
+
+
+#signUpSemiText{
+	color:#606770;
+}
+
+#divider{
+    margin-left:8%;
+	margin-right:8%;
+}
+
+#fullNameBox{
+	display:inline-block;
+}
+
+
+#signUpEmail, #signUpPassword,#signUpConfirmPassword{
+	background-color:#f2f2f2;
+	border:1px solid #f2f2f2;
+}
+
+
+.signUpInput::placeholder{
+	color: darkgray;
+    width: 60%;
+}
+
+
+#btnCancel{
+	position:relative;
+	float:right;
+	width:30%;
+	height:7%;
+	border:none;
+	border-radius:2px;
+    background-color:#f2f2f2;
+    color: darkgray;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+#btnCancel:hover{
+    background-color:darkgray;
+    color: white;
+}
+
+
+#btnSignUp{
+	position:relative;
+	float:right;
+	width:30%;
+	height:7%;
+	border:none;
+	border-radius:2px;
+    margin-right: 15%;
+    margin-top: 5%;
+    
+}
+
+
+#btnSignUp{
+	background-color:#cca16a;;
+	color:white;
+}
+
+#btnSignUp:hover{
+	background-color:#946038;
+	color:white;
+}
+
