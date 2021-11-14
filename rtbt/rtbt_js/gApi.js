@@ -23,3 +23,9 @@ function signOut() {
 		$(".DashboardWrap").css("display", "none");
     });
 }
+
+
+function loginBtn(){
+	$(".LoginWrap").css("display", "none");
+	$(".DashboardWrap").css("display", "block");
+}
