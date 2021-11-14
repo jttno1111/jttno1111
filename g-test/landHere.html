@@ -13,10 +13,10 @@
 </head>
 
 <body>
-    <h2 class="alert alert-success">Successfully Signed in</h2>
-   <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    
-    <div class="data" style = "border:1px solid red;">
+    <h2 class="alert alert-success">Sign-In With Google Using JavaScript</h2>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+    <div class="data">
         <p>Name</p>
         <p id="name"></p>
         <p>Image</p>
@@ -25,7 +25,6 @@
         <p id="email"></p>
         <button type="button" class="btn btn-danger" onclick="signOut();">Sign Out</button>
     </div>
-    <h1>Work</h1>
 
     <script src="index.js" async defer></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>

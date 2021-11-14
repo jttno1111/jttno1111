@@ -1,7 +1,6 @@
-.data   {
-    display:none;
+.data {
+    display: block;
 }
-
 
 .g-signin2 {
     position: absolute;
