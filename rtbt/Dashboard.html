@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Get started in RTBT</title>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="rtbt_css/Dashboard.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	
+<body>
+<div class = "dashboard-wrapper">
+
+	
+		
+	<div class = "header-wrapper">
+		<img src="rtbt_img/menu.png" id="menu-icon"  alt="menu" />
+		<label style="margin-left:7px;" class = "wc-user">Welcome to RTBC</label>
+		<label class = "wc-user"  > username!</label>
+		<img src="rtbt_img/sampleProfile.png" id="image" class="rounded-circle" alt="profile" />
+	</div>
+
+    <div class="data">
+		<p>Name</p>
+        <p id="name"></p>
+        <p>Image</p>
+        <img id="image" class="rounded-circle" width="100" height="100" />
+        <p>Email</p>
+        <p id="email"></p>
+        <button type="button" class="btn btn-danger" onclick="signOut();">Sign Out</button>
+    </div>
+
+</div>
+
+
+
+
+</body>
+
+<script src="rtbt_js/gApi.js" async defer></script>
+<script>
+
+	document.getElementById("name").innerHTML = localStorage.getItem('name');
+	document.getElementById("email").innerHTML = localStorage.getItem('email');
+	document.getElementById("image").src = localStorage.getItem('image');
+
+</script>
+</html>
