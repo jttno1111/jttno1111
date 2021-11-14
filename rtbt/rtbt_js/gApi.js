@@ -9,6 +9,7 @@ function onSignIn(googleUser) {
 	$("#name").text(profile.getName());
     $("#email").text(profile.getEmail());
     $("#image").attr('src', profile.getImageUrl());
+	location.reload();
 
 }
 
@@ -21,6 +22,7 @@ function signOut() {
         $(".g-signin2").css("display", "block");
 		$(".LoginWrap").css("display", "block");
 		$(".DashboardWrap").css("display", "none");
+		location.reload();
     });
 }
 
