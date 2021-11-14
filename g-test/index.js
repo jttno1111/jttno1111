@@ -15,5 +15,6 @@ function signOut() {
         alert("You have been signed out successfully");
         $(".data").css("display", "none");
         $(".g-signin2").css("display", "block");
+	window.location.href="index.html";
     });
 }
