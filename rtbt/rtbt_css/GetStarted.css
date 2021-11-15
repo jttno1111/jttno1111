@@ -82,7 +82,7 @@ height:28%;
 	border:none;
 	display:block;
 	margin:0 auto;
-	height:5%;
+	height:6%;
 	width:100%;
 	font-weight:600;
 	margin: 0px 0px 7px 0px;
@@ -105,21 +105,137 @@ height:28%;
 }
 
 .MainWrap{
-	border:1px solid red;
 	width:100%;
-	height:100%
+	height:100%;
+	position:relative;
 }
 
-.LoginWrap{
-	border:1px solid green;
+.logReg{
 	width:100%;
 	height:100%;
 	display:block;
 }
 
-.DashboardWrap{
-	border:1px solid green;
+.abandoned{
 	width:100%;
 	height:100%;
 	display:none;
+}
+
+.LoginFrm{
+	width:100%;
+	height:0%;
+	position:absolute;
+	bottom:0;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	background-color:white;
+	transition-property: height;
+	transition-duration: 0.3s;
+	transition-delay: 0.1s;
+}
+
+.loginWrap{
+	width:100%;
+	height:100%;
+	display:none;
+	background-color:black;
+	opacity:0.6;
+}
+
+
+.clbx{
+	height:7%;
+	border-bottom:0.1px solid gray;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position:relative;
+}
+
+.clbx label{
+	font-weight:700;
+}
+
+.clbx img{
+	position:absolute;
+	left:10;
+	height:40%;
+}
+
+.lglgn{
+	height:15%;
+	width:100%;
+	margin-top:3%;
+}
+
+.lglgn button{
+	border:none;
+	height:40%;	
+	background-color:#231F20;
+	border-radius:2px;
+	color:white;
+	padding-left:20px;
+	padding-right:20px;
+	position:relative;
+	float:right;
+	right:7%;
+	margin-top:6%;
+
+}
+
+.lglgn img{
+	height:100%;
+	position:relative;
+	left:2%;
+}
+
+.lgnTxt{	
+	margin-bottom:4%;
+	
+}
+
+.bxlgntxtnpt{
+	height:50%;
+	width:100%;
+	padding:5%;
+}
+
+.bxlgntxtnpt label{
+	margin-top:3%;
+	color:black;
+}
+
+.bxlgntxtnpt input{
+	padding:10px;
+	border:0.5px solid #0E36D8;
+	border-radius:5px;
+	outline:none;
+	width:100%;
+	height:15%;
+}
+
+
+
+.RegWrap{
+	width:100%;
+	height:100%;
+	display:none;
+	background-color:black;
+	opacity:0.6;
+}
+
+
+
+.RegFrm{
+	width:100%;
+	height:0%;
+	position:absolute;
+	bottom:0;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	background-color:white;
+	transition-property: height;
+	transition-duration: 0.3s;
+	transition-delay: 0.1s;
 }
