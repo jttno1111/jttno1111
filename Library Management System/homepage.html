@@ -1,0 +1,174 @@
+<html lang="en" dir="ltr">
+ 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookZuela</title>
+        <link rel="stylesheet" href="css/homepage.css">
+        <link rel="stylesheet" href="css/mStyle.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+    
+    
+    <!--- BACKGROUND IMAGE -->
+        <body>
+                
+            <div class="main">
+            
+            <img src="img/Homeeee.png" class="bg">
+            
+            <!--- GET STARTED BUTTON -->
+                <a href="#" class="started" id="started">GET STARTED AS ADMIN!</a>
+
+            
+            <!--- LOGIN NOW BUTTON AND POPUP FORM --> 
+                <a href="#" class="login-btn" id="login">LOGIN NOW!</a>
+        
+                <div class="logcont"></div>  
+                <div class="logpopup" id="logmodal">
+                    <div class="logpopcont">
+                        
+                        <div id = "mainBox">
+                            <font id = "signInText">SIGN IN</font><br>
+                            <font id = "signInCaption">to access your account!</font>
+				            <div id = "topSeparator"></div>
+				                <div id = "secondaryBox">                            
+					
+					               <div class="slidershow middle">
+
+                                   <div class="slides">
+                                       <input type="radio" name="r" id="r1" checked>
+                                       <input type="radio" name="r" id="r2">
+		
+		
+                                        <div class="slide s1">
+                                            <div id = "lgnFrmBox">
+                                                
+                                            <div id = "boxEmail">
+                                            <label for="emailInput">Enter ID</label>
+                                            <input placeholder="LIB-7854" id="emailInput" type="text" class="validate">
+                                            </div>
+
+                                            <div id = "boxPass"><br>
+                                            <label for="password">Enter Password</label>
+                                            <input placeholder="Password (6 Characters)" id="password" type="password" class="validate">
+                                            </div>
+
+                                            <div id = boxLgnBtn>
+                                            <input value="Login as librarian" id="lgnBtn" type="button" onclick = "loginBtn()" >
+                                            </div>
+
+                                        </div>
+                                            <div class="navigation">
+                                                <label for="r2" class="bar" id = switchToAdmin>Swtich to Admin</label>
+                                            </div>
+                                       </div>
+		
+		
+                                        <div class="slide">
+                                        <div id = "lgnFrmBox">
+                                            <div id = "boxEmail">
+                                            <label for="emailInput">Enter email</label>
+                                            <input placeholder="sample12@gmail.com" id="emailInput" type="text" class="validate">
+                                            </div>
+
+                                            <div id = "boxPass"><br>
+                                            <label for="password">Enter Password</label>
+                                            <input placeholder="Password (6 Characters)" id="password" type="password" class="validate">
+                                            </div>
+
+                                            <div id = "boxLgnBtn">
+                                            <input value="Login as admin" id="lgnBtn" type="button" onclick = "loginBtn()" >
+                                            </div>
+                                            
+                                            <div class="navigation">
+                                                <label for="r1" class="bar" id = "switchToLibrarian"> Swtich to Librarian</label>
+                                            </div>
+
+
+                                            <div id = "boxDontHaveAccount">
+							                     <a href = "#" id = "dontHaveAccountText" class="dontHaveAccountText">Don't have account?</a>
+							                </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            
+                                       <div id = "bgBlocker"></div>	
+		
+                                            <div id = "popBox">
+
+                                                <div id = "boxSignUpText">
+                                                    <font id = "signUpText">SIGN UP</font>
+                                                    <div id = "signUpSemiText">It’s quick and easy!</div>
+                                                </div>
+
+                                                <div id = "divider">
+                                                <div id = "boxSignUpForm">
+                                                    <div id = "fullNameBox">
+                                                        <label for="caption">Please fill in the form</label>
+                                                        <input placeholder="First name" class = "signUpInput" id= "fn" type="text" />
+                                                        <input placeholder="Last name" class = "signUpInput" id= "ln" type="text" />
+                                                        <input placeholder="Mobile number" class = "signUpInput" id= "signUpMobile" type="text"/>
+                                                        
+                                                    </div>
+                                                        <br/><br/><label for = "signUpEmail">Note:</label><br/>
+                                                        <label>Email and password will be your input when signing in</label><br><br>
+                                                        <input placeholder="Email" class = signUpInput id= signUpEmail type="email" />
+                                                        <input placeholder="Password (6 Characters)" class = signUpInput id= signUpPassword type="password" />
+                                                        <input placeholder="Confirm password" class = signUpInput id= signUpConfirmPassword type="password" />
+                                                    </div>
+                                                </div>
+
+
+                                                    <input id="btnSignUp" type="button" value="Sign Up" />
+                                                    <input id="btnCancel" type="button" value="Cancel" onclick="cancelSignUp()"/>
+
+                                            </div>
+
+   
+   <script>
+		function cancelSignUp(){
+		document.getElementById("bgBlocker").style.visibility = "hidden";
+		document.getElementById("popBox").style.visibility = "hidden";
+		}
+		
+		document.getElementById( "boxDontHaveAccount" ).onclick = function(){
+			document.getElementById("bgBlocker").style.visibility = "visible";
+			document.getElementById("popBox").style.visibility = "visible";
+		};
+		document.getElementById( "dontHaveAccountText" ).onclick = function(){
+			document.getElementById("bgBlocker").style.visibility = "visible";
+			document.getElementById("popBox").style.visibility = "visible";
+		};
+		
+		
+   </script>
+
+
+
+
+            </div>
+        
+                    </div>
+                </div>
+            </div>
+        <!--- POPUP FORM SCRIPT--> 
+        <script>
+                document.getElementById("login").addEventListener("click", function(){
+                    document.querySelector(".logpopup").style.display = "flex";
+                })
+        
+                var logpopup = document.getElementById("logmodal");
+                    window.onclick = function(event) {
+                    if (event.target == logpopup) {
+                    logpopup.style.display = "none";
+                    }}
+        </script>   
+           
+    </body>
+   <script src = "js/login.js"></script>
+    
+    
+</html>

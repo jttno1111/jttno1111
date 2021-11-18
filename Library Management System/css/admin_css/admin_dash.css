@@ -1,0 +1,79 @@
+
+
+.dpTopBox, .dpBottomBox{
+	width:97%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin: 0 auto;
+	border-radius:20px;
+}
+
+.dpTopBoxTxt, .dpTopBoxImg{
+	height:100%;
+	width:100%;
+	position:relative;
+	
+	
+}
+
+.dpTopBoxTxt{
+	padding-left:10%;
+	padding-right:3%;
+	
+}
+
+.dpTopBox{
+	margin-bottom:1%;
+	height:55%;
+	background-color:#d9c6b1;
+}
+.dpBottomBox{
+	height:45%;
+}
+
+.imgGbook{
+	height:100%;
+	position:absolute;
+	left:-10%;
+}
+
+.WcBack
+{
+	font-size:32px;
+	margin-top:15%;
+	color:#936037;
+	margin-bottom:2%;
+}
+
+
+.WcMsg{
+	color:#936037;
+	font-size: 15px;
+	font-style: italic;
+}
+
+.calendarBox{
+	width:50%;
+	height:100%;
+}
+
+.activitiesBox{
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background-color:#d9c6b1;
+	margin-left:1%;
+	border-radius:20px;
+}
+
+.activitiesBox div{
+	width:30%;
+	height:80%;
+	border:1px solid white;
+	margin:2%;
+	border-radius:20px;
+	
+}

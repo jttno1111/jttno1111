@@ -1,0 +1,274 @@
+.iconsBtnBox{
+	width:14%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:97%;
+	position:relative;
+	margin-left:3%;
+}
+
+.iconBtn{
+	margin:5px;
+	border-radius:50%;
+	border:none;
+	height:60%;
+	width:40px;
+	background-color: #bd9d80;
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
+	transition: all 0.3s ease;
+	}.iconBtn:hover
+		{
+	    box-shadow: 0 2.5px  #936037;
+		transform: translateY(.5px);
+		cursor: pointer;
+		background-color:#ae804c; 
+		}
+
+
+
+.secondary-right-box{
+	width:90%;
+	height:100%;
+	display:flex;
+	margin-left: 10%;
+}
+
+
+.divBody{
+	width:100%;
+	height:100%;
+}
+
+
+#upAndDelFormBox{
+	display:none;
+}
+
+
+.contentDivBody{
+	height:80%;
+	width:100%;
+	margin:0 auto;
+}
+
+
+
+.inputBookDetails{
+	background-color:white;
+	padding-left:20px;
+	color:#ae804c;
+}
+
+.btnUpdate, .btnArchive{
+	background-color:#bd9d80;
+	color:white;
+}
+
+.btnUpdate:hover, .btnArchive:hover, .btnSave:hover{
+color: white;
+  background-color:#ae804c;
+  box-shadow: 0 2.5px  #936037;
+  transform: translateY(2.5px); 
+  cursor: pointer;
+}
+
+.btnUpdate, .btnArchive, .btnSave{
+font-size: 15px;
+}
+
+.inputBookDetails{
+	height:8%;
+	width:80%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+}
+
+.btnUpdate, .btnArchive{
+	height:6%;
+	width:50%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+	margin-left: 18%;
+}
+
+.btnUpdate{
+	margin-top: -10%;
+}
+
+
+#descrip-id{
+	color:#ae804c;
+	font-size:15px;
+    margin-left: 31%;
+    margin-bottom: 2%;
+	margin-top: -3.5%;
+}
+
+.descrip-right-box-book{
+	color:#ae804c;
+	font-size:13px;
+    margin-left: 5.5%;
+    margin-top: 2%;
+}
+
+
+
+#descrip-id{
+	padding-left:10px;
+    margin-left: 8%;
+}
+
+
+.searchIdBox{
+	height:6.5%;
+	width:66.5%;
+	margin-bottom:5%;
+    margin-left: 8%;
+}
+
+.searchIdIcon{
+	height:50%;
+	
+}
+
+#searchIdInput{
+	height:100%;
+	width:100%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+	background-color:white;
+	padding-left:20px;
+	color:#ae804c;	
+	margin-top: 3%;
+	
+	
+}
+
+
+
+
+.descrip-right-box-book{
+	font-size:18px;
+	font-weight:600;
+	padding-top:5%;
+	padding-left:5%;
+	padding-bottom:9%;
+}
+
+.input-elem-box{
+	width:85%;
+    height: 80%;
+	margin:0 auto;
+	margin-top:2%;
+    margin-bottom: -50%;
+}
+
+.drpDwnBtnMng{
+	width:13%;
+	height:75%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color: #bd9d80;
+	border-radius:40px;
+	color:white;
+	cursor:pointer;
+	font-size:15px;
+	
+}
+
+.action-to-drpDwnMng{
+	top:9%;
+	right:15%;
+	position:absolute;
+	width:10%;
+	height:6%;
+	background-color: #e0d2c2;
+	border-radius:10px;
+	display:none;
+}
+
+.drpDwnBtn{
+    font-size: 15px;
+	width:100%;
+	height:100%;
+	border:none;
+	color:#ae804c;
+	background-color:#e0d2c2;
+}
+
+.drpDwnBtn:hover{
+	color:#e0d2c2;
+	background-color:#ae804c;
+}
+
+#closeIcon{
+	width:10%;
+	margin-top:15%;
+    margin-left: 82%;
+}
+
+#closeIcon:hover{
+  box-shadow: 0 4.5px  #936037;
+  transform: translateY(4.5px); 
+  cursor: pointer;
+	border: none;
+	border-radius: 80px 80px;
+}
+
+
+.addBookFormBox{
+	height:80%;
+	width:85%;
+	margin:0 auto;
+	margin-top: 4%;
+}
+
+
+.inputBox{
+	background-color:white;
+	padding-left:20px;
+	color:#ae804c;
+	height:8%;
+	width:80%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+}
+
+
+.bookCreationBtnBox{
+	margin:0 auto;
+	width:85%;
+}
+
+.btnSave{
+	height:6%;
+	width:60%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+	background-color:#bd9d80;
+	color:white;
+	margin-left: 12%;
+	margin-top: -50%;
+}
+.panelHeader{
+	margin-left: 3%;
+	font-size:30px;
+	font-weight:800;
+	color:#bd9d80;
+    position: relative;
+    width: 50%;
+}
