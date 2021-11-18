@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/bakso-sapi');
+
+
+body{
+	margin:0;
+	font-family: 'Poppins', sans-serif;
+	background-color:white;
+	
+}
+
+.dashboardWrapper{
+	width:100%;
+	min-width:900px;
+	height:100%;
+	min-height:600px;
+	display:flex;
+	align-items:center;
+}
+
+.slideMenuBar{
+	width:20%;
+	min-width:250px;
+	height:100%;
+	background-color:#e0d2c2;
+	padding-top:2%;
+	display:block;
+}
+
+.slideMenuBarIcon{
+	width:8%;
+	min-width:7.5%;
+	height:100%;
+	background-color:#e0d2c2;
+	padding-top:2%;
+	display:none;
+}
+
+
+.logo{
+	width: 50%;
+	cursor: pointer;
+	display:block;
+	margin:0 auto;
+}
+
+.logoConvToIco{
+	width: 70%;
+	cursor: pointer;
+	display:block;
+	margin:0 auto;
+}
+
+
+
+.nav1-info-box{
+	margin-top:5%;
+	background-color:#e7ded3;
+	height:12%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.nav1-info-box-Ico{
+	margin-top:15%;
+	margin-bottom:15%;
+	background-color:#e7ded3;
+	height:10%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+#nav2-info-box-pic{
+	height:100%;
+	width:30%;
+	display:flex;
+	align-items:center;
+	justify-content:left;
+}
+
+#nav2-info-box-pic-to-ico{
+	height:100%;
+	width:50%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+#nav2-info-box-text{
+	width:70%;
+	font-size:12px;
+	color:black;
+	font-weight:600;
+	margin-left:3%;
+}
+
+
+#name, #email{
+	font-weight:500;
+	font-size:12px;
+	color: #ae804c;
+	
+}
+
+.nav2-info-box div{
+	max-height:25%;
+}
+
+.navProfilePic{
+	border-radius: 50%;
+	width:80%;
+	margin-left:20%;
+}
+
+.navProfilePicToIco{
+	border-radius: 50%;
+	width:80%;
+}
+
+.btnsMenuBox{
+	height:50%;
+}
+
+.btnMenu, .log{
+	background-color: #bd9d80;
+	align-content: center;
+	display:block;
+	cursor: pointer;
+	border-radius:40px;
+	border:none;
+	width:80%;
+    height: 13%;
+	color:white;
+    font-size: 16px;
+	margin:7%;
+}
+
+.btnMenu:hover, .log:hover{
+	color: white;
+	background-color:#ae804c;
+	box-shadow: 0 2.5px  #936037;
+	transform: translateY(1.5px); 
+	cursor: pointer;
+}
+
+.btnMenu i{
+	display:inline-block;
+	margin-left:10%;
+}
+
+
+.btnMenuIco, .logIco{
+	background-color: #bd9d80;
+	align-content: center;
+	display:block;
+	cursor: pointer;
+	border-radius:40px;
+	border:none;
+	width:50%;
+    height: 13%;
+	color:white;
+    font-size: 16px;
+	margin:10%;
+}
+
+
+
+
+.btnMenuIco:hover, .logIco:hover{
+	color: white;
+	background-color:#ae804c;
+	box-shadow: 0 2.5px  #936037;
+	transform: translateY(2.5px); 
+	cursor: pointer;
+}
+
+
+
+.log{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:75%;
+	height:11%;
+	padding:5px;
+}
+
+.dashboardBody{
+	width:100%;
+	height:100%;
+}
+
+.secondaryDashboardBody{
+	height:100%;
+	width:100%;
+	min-width:700px;
+	padding-top:1%;
+}
+
+
+.topNavBox{
+	height:7%;
+	width:97%;
+	background-color:#e0d2c2;
+	border:none;
+	border-radius:10px;
+	display:flex;
+	align-items:center;
+	margin:0 auto;
+	position:relative;
+}
+
+
+.panelHeader{
+    margin-left: 1%;
+	font-size:30px;
+	font-weight:800;
+	color:#bd9d80;
+    position: relative;
+    width: 50%;
+}
+
+
+
+
+
+/****************************************************************************DASHBOARD*PANEL*************************************/
+
+.panels{
+	margin-top:1%;
+	height:85%;
+}
+
+
+#activeBtn{
+	color: white;
+	background-color:#ae804c;
+	box-shadow: 0 2.5px  #936037;
+	transform: translateY(2.5px); 
+	cursor: pointer;
+	
+}
+
+.btnMenuIco i{
+	font-size:20px;;
+	
+}
+
+.notifSettBox{
+	height:100%;
+	width:10%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	position:absolute;
+	right:10;
+	
+}
+
+.settingsBtnIco, .notifBtnIco{
+	background-color: #bd9d80;
+	align-content: center;
+	display:block;
+	cursor: pointer;
+	border-radius:10px;
+	border:none;
+	width:45%;
+    height: 70%;
+	color:white;
+	margin-left:1%;
+}
+
+
+
+.hamburgerBtnIco{
+	background-color: #bd9d80;
+	align-content: center;
+	display:block;
+	cursor: pointer;
+	border-radius:10px;
+	border:none;
+	width:4%;
+    height: 70%;
+	color:white;
+	margin-left:1%;
+}
+
+.hamburgerBtnIco:hover, .settingsBtnIco:hover, .notifBtnIco:hover{
+	background-color:#ae804c;
+	box-shadow: 0 2.5px  #936037;
+	cursor: pointer;
+}
+
+
+.hamburgerBtnIco i, .settingsBtnIco i, .notifBtnIco i{
+	color:white;
+	font-size:18px;
+}
+
+
+#mngBtnMenu:hover + .mngSubMenuBox, .mngSubMenuBox:hover{
+  visibility: visible;
+  opacity: 1;
+}
+
+.mngSubMenuBox{
+	transition: visibility 0.5s, opacity 0.3s linear;
+	visibility: hidden;
+	opacity: 0;
+	border:1px solid #ae804c;
+	position:absolute;
+	width:15%;
+	height:14%;
+	justify-content:right;
+	margin-top:-4%;
+	margin-left:15.5%;
+	background-color:whitesmoke;
+	border-radius:20px;
+	overflow:hidden;
+	z-index:1;
+}
+
+.mngSubMenuBox div{
+	transition: background-color 0.2s, background-color 0.2s linear;
+	width:100%;
+	height:33.5%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:12px;
+	color:#ae804c;
+	cursor:pointer;
+}
+
+.mngSubMenuBox div:hover{
+	background-color:#e0d2c2;
+}
+
+
+
+
+
+#srBtnMenu:hover + .srSubMenuBox, .srSubMenuBox:hover{
+  visibility: visible;
+  opacity: 1;
+}
+
+.srSubMenuBox{
+	transition: visibility 0.5s, opacity 0.3s linear;
+	visibility: hidden;
+	opacity: 0;
+	border:1px solid #ae804c;
+	position:absolute;
+	width:15%;
+	height:10%;
+	justify-content:right;
+	margin-top:-4%;
+	margin-left:15.5%;
+	background-color:whitesmoke;
+	border-radius:20px;
+	overflow:hidden;
+	z-index:1;
+}
+
+.srSubMenuBox div{
+	transition: background-color 0.2s, background-color 0.2s linear;
+	width:100%;
+	height:50%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:12px;
+	color:#ae804c;
+	cursor:pointer;
+}
+
+.srSubMenuBox div:hover{
+	background-color:#e0d2c2;
+}
+
+
+

@@ -1,0 +1,339 @@
+#myTable{
+	width:100%;
+	border-collapse: collapse;
+	border-radius: 1em;
+	overflow: hidden;
+	border: 1px solid #ae804c;
+	font-size: 14px;
+	width: 98.5%;
+}
+
+.tbScroll {
+    overflow:scroll;
+	height:100%;
+	width:97%;
+	margin: 0 auto;
+}
+
+
+#myTable th, #myTable td {
+  text-align: center;
+  padding: 12px;
+}
+
+#myTable tr {
+  background-color: #fcfcfa;
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f7f2ec;
+}
+
+#myTable tr.header{
+    width: 98.5%;
+    background-color: #bd9d80;
+    color: white;
+}
+
+
+.searchBar{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:20%;
+	height:75%;
+	padding:5px;
+	margin-left:0%;
+	position:relative;
+}
+
+
+#myInput{
+	height:95%;
+	width:100%;
+	border-radius:30px;
+	border:1px solid #bd9d80;
+	padding:5px;
+	padding-left:20px;
+    margin-right: 18%;
+}
+#myInput:focus{
+	outline:0.1px solid brown;
+}
+
+.searchIcon{
+	height:40%;
+	position:absolute;
+	right:25%;
+	margin-top:0.2%;
+}
+
+.primary-right-box{
+	width:30%;
+	background-color:#e0d2c2;
+	border-left:1px solid #bd9d80;
+	height:103.9%;
+	display:none;
+}
+
+
+.secondary-right-box{
+	width:90%;
+	height:100%;
+	display:flex;
+	margin-left: 10%;
+}
+
+.divBody{
+	width:100%;
+	height:100%;
+}
+
+
+#upAndDelFormBox{
+	display:none;
+}
+
+
+.contentDivBody{
+	height:80%;
+	width:100%;
+	margin:0 auto;
+}
+
+
+
+.libDetail{
+	background-color:white;
+	padding-left:20px;
+	color:#ae804c;
+}
+
+
+
+.libDetail{
+	height:8%;
+	width:80%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+}
+
+.btnUpdate, .btnArchive{
+	height:6%;
+	width:60%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+	margin-left: 11%;
+	background-color:#bd9d80;
+	color:white;
+}
+
+.btnUpdate{
+	margin-top: -10%;
+}
+
+#descrip-id{
+	color:#ae804c;
+	font-size:14px;
+    margin-left: 8.5%;
+	margin-top: -4%;
+    margin-bottom: 2%;
+}
+
+.descrip-right-box-lib{
+	color:#ae804c;
+	font-size:15px;
+    margin-left: 5.5%;
+    margin-top: 2%;
+}
+
+#descrip-id{
+	padding-left:10px;
+}
+
+.box-btns-for-lib{
+	margin:0 auto;
+	width:85%;
+    padding-top: -50%;
+}
+
+
+
+.btnUpdate:hover, .btnArchive:hover, .btnSave:hover{
+color: white;
+  background-color:#ae804c;
+  box-shadow: 0 2.5px  #936037;
+  transform: translateY(2.5px); 
+  cursor: pointer;
+}
+
+.btnUpdate, .btnArchive, .btnSave{
+font-size: 15px;
+}
+
+
+
+.searchIdBox{
+	height:6.5%;
+	width:66.5%;
+	margin-bottom:5%;
+    margin-left: 8%;
+    
+}
+
+.searchIdIcon{
+	height:50%;
+	
+}
+
+#searchIdInput{
+	height:100%;
+	width:100%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+	background-color:white;
+	padding-left:20px;
+	color:#ae804c;	
+}
+
+.descrip-right-box-lib{
+	font-size:18px;
+	font-weight:600;
+	padding-top:5%;
+	padding-left:5%;
+	padding-bottom:9%;
+}
+
+.input-elem-box{
+	width:85%;
+    height: 80%;
+	margin:0 auto;
+	margin-top:5%;
+    margin-bottom: -50%;
+}
+
+.drpDwnBtnMng{
+	width:13%;
+	height:75%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color: #bd9d80;
+	border-radius:40px;
+	color:white;
+	cursor:pointer;
+	font-size:13px;
+	
+}
+
+.action-to-drpDwnMng{
+	top:100%;
+	position:absolute;
+	right:31%;
+	width:10%;
+	height:100%;
+	background-color: #e0d2c2;
+	border-radius:10px;
+	display:none;
+}
+
+.drpDwnBtn{
+    font-size: 13px;
+	width:100%;
+	height:100%;
+	border:none;
+	color:#ae804c;
+	background-color:#e0d2c2;
+}
+
+.drpDwnBtn:hover{
+	color:#e0d2c2;
+	background-color:#ae804c;
+}
+
+#closeIcon{
+	width:10%;
+	margin-top:15%;
+    margin-left: 82%;
+}
+
+#closeIcon:hover{
+  box-shadow: 0 5.5px  #936037;
+  transform: translateY(5.5px); 
+  cursor: pointer;
+	border: none;
+	border-radius: 80px 80px;
+}
+
+
+.addLibManFormBox{
+	height:80%;
+	width:85%;
+	margin:0 auto;
+	margin-top: -5%;
+}
+
+
+.inputBox{
+	background-color:white;
+	padding-left:20px;
+	color:#ae804c;
+	height:8%;
+	width:80%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+}
+
+.noteAccountCreation{
+    font-size:14px;
+	padding:5%;
+	margin-top:6%;
+    color: #ae804c;
+}
+
+.accCreationBtnBox{
+	margin:0 auto;
+	width:85%;
+    font-size: 15px;
+}
+
+.btnSave{
+	height:6%;
+	width:60%;
+	border:none;
+	border-radius:30px;
+	margin:5;
+	outline:none;
+	background-color:#bd9d80;
+	color:white;
+	margin-left: 12%;
+	margin-top: -30%;
+}
+
+
+
+#IcoSettings{
+	position:absolute;
+	color:red;
+	display:block;
+	margin-left:91%;
+}
+
+
+.description{
+	color:#ae804c;
+    padding:11%;
+    font-size: 14px;
+	margin-top: -15%;
+}
+
+
