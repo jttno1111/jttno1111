@@ -1,0 +1,163 @@
+<html>
+	<head>
+		<title>Get started in RTBT</title>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	    <meta name="google-signin-client_id" content="501038008472-8v13u7g4tl2bteqejav0ebsohgah9067.apps.googleusercontent.com">
+		<link rel="stylesheet" href="rtbt_css/GetStarted.css">
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+		<link rel="stylesheet" href="rtbt_css/gApi.css">
+		<link rel="stylesheet" href="rtbt_css/Dashboard.css">
+	
+	</head>
+<body>
+
+	<div class = "MainWrap">
+		<div class= "logReg">
+
+				<div id = "GSWrapper">
+					<img id = "GSLogo" src="rtbt_img/sampleLogo.png" alt="Logo">
+					<div id = "GSWrapRealTimeText">Real Time Bus tracking</div>
+				</div>
+
+				<div class = "GS-box-slider-text">
+					<div id = "text-getStart">Sign up to get started</div>
+					<div id = "text-dontMiss">Don't miss your bus!</div>
+				</div>
+
+				<div class = "GS-box-Slider">
+				<div class = "GS-imgSlider"> 
+				</div>
+				</div>
+
+				<div class = "GS-box-buttons">
+					<div class = "GS-box-btn"><button class = "GS-btn" id = "btn-login" onclick = "loginBtnFrm()">Login</button></div>
+					<div class = "GS-box-btn"><button class = "GS-btn" id = "btn-signUp"  onclick = "regFrmBtn()" >Register</button></div>
+				</div>
+		
+				<div id = "or">or</div>
+				<div class = "Box-gSign-in">
+					<div class="g-signin2" id="my-signin2" data-onsuccess="onSignIn"></div>
+				</div>
+		</div>
+		
+		
+		<!-------------------------------------------------------------------------------------------------------------------
+		--------------------------------------------------PAGE-2-------------------------------------------------------------
+		-------------------------------------------------------------------------------------------------------------------->
+
+
+		
+		<div class = "abandoned">
+				<div class = "header-wrapper">
+					<img src="rtbt_img/menu.png" id="menu-icon"  alt="menu" />
+					<label style="margin-left:7px;" class = "wc-user">Welcome to RTBC</label>
+					<label class = "wc-user"  > username!</label>
+					<img src="rtbt_img/sampleProfile.png" id="image" class="rounded-circle" alt="profile" />
+				</div>
+
+				<div class="data">
+					<p>Name</p>
+					<p id="name"></p>
+					<p>Image</p>
+					<img id="image" class="rounded-circle" width="100" height="100" />
+					<p>Email</p>
+					<p id="email"></p>
+					<button type="button" class="btn btn-danger" onclick="signOut();">Sign Out</button>
+				</div>
+		</div>
+		<div class = "loginWrap">
+				<div class = "LoginFrm">
+					<div class = "clbx">
+						<img src = "icons/closeBtn.png" alt = "close button" onclick="CloseLgnFrm()"/>
+						<label>Login</label>
+					</div>
+					<div class = "lglgn">
+						<img src = "rtbt_img/sampleLogo.png" alt = "close button" />
+						<button onclick = "lgnBtn()">Login</button>
+					</div>
+					
+					<div class = bxlgntxtnpt>
+						<div class = "lgnTxt">Login to RTBT</div>
+							<label>Email or Username</label><br>
+							<input placeholder = "Sample123@gmail.com" type="text"/><br>
+							<label>Password</label><br>
+							<input placeholder = "Enter password" type="text"/>
+							<label>Forgot account?</label><br>
+					</div>
+
+
+
+				</div>
+		</div>
+		
+		<div class = "RegWrap">
+				<div class = "RegFrm">
+					<div class = "clbx">
+						<img src = "icons/closeBtn.png" alt = "close button" onclick="CloseRegFrm()"/>
+						<label>Registration</label>
+					</div>
+					<div class = "lglgn">
+						<img src = "rtbt_img/sampleLogo.png" alt = "close button" />
+						<button onclick = "regBtn()">Register</button>
+					</div>
+					
+					<div class = bxlgntxtnpt>
+						<div class = "lgnTxt">Sign up to RTBT</div>
+							<label>Email or Username</label><br>
+							<input placeholder = "Sample123@gmail.com" type="text"/><br>
+							<label>Mobile number</label><br>
+							<input placeholder = "ex.(+63)977106215" type="text"/><br>
+							<label>Password</label><br>
+							<input placeholder = "Enter password" type="text"/>
+							<label>Confirm password</label><br>
+							<input placeholder = "Re-enter password" type="text"/>
+							<label>Forgot account?</label><br>
+					</div>
+
+
+
+				</div>
+		</div>
+	
+	</div>
+
+</body>
+
+    <script src="rtbt_js/gApi.js" async defer></script>
+	<script src="rtbt_js/swtLrt.js" ></script>
+	<script src="rtbt_js/login.js" ></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+  
+	<script>
+	function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+	</script>
+
+
+
+</html>
