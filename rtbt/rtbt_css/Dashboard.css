@@ -1,0 +1,229 @@
+
+.slideWrap{
+	background-color:white;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	position:absolute;
+	height:100%;
+	width:0%;
+	visibility:hidden;
+	opacity:0;
+	border-right:1px solid #2a2b2f;
+	transition: visibility 0.5s, opacity 0.1s linear, width 0.2s;
+}
+
+
+#logo{
+	height:100%;
+
+}
+
+#hgrBtn,#notifBtn{
+	padding:0px 15px 0px 15px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-size:30px;
+	height:100%;
+}
+
+#hgrBtn i,#notifBtn i{
+	color:#636466;
+}
+
+.contentBox{
+	background-color:whitesmoke;
+	height:65%;
+	width:100%;
+	padding-top:1%;
+	overflow:scroll;
+
+}
+
+
+.divButtons{
+	background-color:black;
+	border-radius:50%;
+	width:100px;
+	height:100px;
+	margin:5%;
+	margin-left:10%;
+	position:relative;
+	font-weight:750;
+	color:#4285F4;
+	font-size:35px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.divText{
+	width:150px;
+	height:150px;
+	margin-left:10px;
+	font-family: 'Poppins', sans-serif;
+	position:relative;
+	font-weight:900;
+	font-size:20px;
+	display:flex;
+	align-items:center;
+	justify-content:left;
+}
+
+.divButtonsBox{
+	border-bottom:1px solid lightgray;
+	background-color:white;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:26%;
+	width:90%;
+	margin:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#btnViewBuses div{
+	color:#4285F4;
+}
+
+#btnCheckFriends div{
+	color:#34A853;
+}
+
+#btnFavBus div{
+	color:#FBBC05;
+}
+
+#btnNews div{
+	color:#EA4335;
+}
+
+.closeSlideWrap{
+	height:7%;
+	display:flex;
+	align-items:center;
+	font-size:20px;
+	padding-left:10px;
+	
+}
+.closeSlideWrap div{
+	padding-left:10px;
+	height:100%;
+	display:flex;
+	align-items:center;
+}
+
+.slideWrapContent{
+	height:50%;
+	padding:10px;
+}
+
+.slideWrapContent div{
+	height:15%;
+	border:0.1px solid lightgray;
+	display:flex;
+	align-items:center;
+	justify-content:left;
+	padding-left:15px;
+}
+
+.slideWrapContent div:hover{
+	background-color:gray;
+	color:white;
+}
+
+.slideWrapContent div:hover i{
+	color:white;
+}
+
+.slideWrapContent i{
+	margin-right:15px;
+	color:#636466;
+}
+
+.btnCounts{
+	font-size:20px;
+	padding:10px;
+	color:white;
+	height:100%;
+	margin-top:50px;
+}
+
+#busIco i, #frIco i, #favIco i, #newsIco i{
+	color:white;
+}
+
+#busIco{
+	background-color:#4285F4;
+}
+
+#frIco{
+	background-color:#34A853;
+}
+
+#favIco{
+	background-color:#FBBC05;
+}
+
+#newsIco{
+	background-color:#EA4335;
+}
+
+.greetBox{
+	width:100%;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:white;
+	padding:10px;
+	text-align:center;
+	border-bottom:1px solid lightgray;
+	color:black;
+}
+
+.time{
+	font-size:40px;
+	width:40%;
+	margin:0 auto;
+}
+
+.noteBox{
+	height:30%;
+	background-color:white;
+	color:#636466;
+}
+
+.headerNote{
+	height:20%;
+	border-top:1px solid lightgray;
+	border-bottom:1px solid lightgray;
+	padding:10px;
+}
+
+.appointment{
+	width:90%;
+	background-color:whitesmoke;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	padding-left:20px;
+	font-weight:bold;
+	padding-top:10px;
+	padding-bottom:10px;
+	position:relative;
+}
+
+.bodyNote{
+
+}
+
+.appointmentTime{
+	font-weight:normal;
+}
+
+.fa-ellipsis-v{
+	position:absolute;
+	top:20%;
+	right:4%;
+}
