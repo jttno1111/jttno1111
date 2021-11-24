@@ -6,7 +6,7 @@
 		<meta name="viewport" content = "width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-		<link rel = "stylesheet" href = "rtbt_css/ViewBuses.css"/>
+		<link rel = "stylesheet" href = "rtbt_css/CheckFriends.css"/>
 		<link rel="stylesheet" href="rtbt_css/Core.css">
 	</head>
 	
@@ -14,14 +14,47 @@
 <div class = "mainWrapper">
 	<div class = "secondaryWrap">
 		<div class = "bodyWrap">
-			<div class = "headerWapper">
-				<div class = "backBtnIco"><i class="fas fa-chevron-left" onclick = "gotoHome()"></i><div class = "backHeadersText">Back</div></div>
+			<div class = "headerWrapper">
+				<div class = "backBtnIco"><i class="fas fa-chevron-left" onclick = "gotoHome()"></i><div onclick = "gotoHome()" class = "backHeadersText">Back</div></div>
 
 				<div class = "infoBtn"><i class="fas fa-info"></i></div>
 			</div>
 			
 			<div class = "contentBox">
-			Check Friends/ Trip with Friends
+				
+				<div class = "bodyNavBar">
+					<div id ="twfBtn" onclick = "openTwfTab()">Trip with friends</div>
+					<div id = "ffBtn" onclick = "openFfTab()">Find friends</div>
+				</div>
+				<div class = "contentBodyBox">
+					<div id = "twfBox">
+						<div id = "boxBlocker" class = "boxBlocker"></div>
+						<div class = "addFrTrpBtn" onclick = "addTrpFrnd()"><i class="fas fa-plus"></i><label>Ride with friends</label></div>
+						<div id ="popUpTWFBox" class = "popUpTWFBox">
+							<div class = "popUpBoxHeader"><label>Trip with?</label><i class="fas fa-times" onclick = "closePopUpBox()"></i></div>
+							<div class = "popUpBoxScroll">
+								<label id = "noteTOStart"> To start trip with a friend, you need to add them first</label>
+								
+							</div>
+						</div>
+						<label id = "noteTOStart"> To start trip with a friend, you need to add them first</label>
+						
+					</div>
+					
+					<div id = "ffBox">
+						<div class = "srchBar">
+							<div class = "srchppl">
+								<i class="fas fa-search"></i>
+								<input spellcheck="false" onblur="exitOverflow()" onfocus="fndFrnds()"
+								class ="inputFf" type = "text" placeholder = "Find friends" />
+							</div>
+							<div class = "overflowBox" id ="overflowBox"></div>
+						</div>
+						<label id = "noteTOStart" style = "left:20%"> No friends yet!</label>
+					</div>
+					
+					
+				</div>
 			</div>
 			
 			
@@ -31,5 +64,6 @@
 </div>
 
 </body>
+<script src = "rtbt_js/CheckFriends.js"></script>
 <script src = "rtbt_js/Core.js"></script>
 </html>

@@ -1,3 +1,12 @@
+var today = new Date();
+var time = today. getHours() + ":" + today. getMinutes();
+var date =(today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+
+document.getElementById("currentTime").innerHTML = time;
+document.getElementById("currentDate").innerHTML = date;
+
+
+
 function btnHam(){
 onOfSlideWrap();
 } 
