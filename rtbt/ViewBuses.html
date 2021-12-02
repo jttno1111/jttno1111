@@ -90,7 +90,7 @@ function getPosition(position){
 	
 	var Icons = L.Icon.extend({
 		options: {
-			iconSize:     [20, 20],
+			iconSize:     [18, 18],
 			shadowSize:   [50, 64],
 			iconAnchor:   [22, 94],
 			shadowAnchor: [4, 62],
@@ -112,9 +112,9 @@ function getPosition(position){
 	var agoo = new Icons({iconUrl: 'rtbt_img/bus.png'});
 
 		you = L.marker([lat, long]).bindPopup('ME.').addTo(map);
-		mSfc = L.marker([16.337894, 120.365706], {icon: sfc}).bindPopup('SFC.').addTo(map);
-		mAringay = L.marker([16.386607, 120.359545], {icon: aringay}).bindPopup('ARINGAY.').addTo(map);
-		mAgoo = L.marker([16.602034, 120.320641], {icon: agoo}).bindPopup('AGOO.').addTo(map);
+		mSfc = L.marker([16.582924, 120.322722], {icon: sfc}).bindPopup('SFC.').addTo(map);
+		mAringay = L.marker([16.368490, 120.359888], {icon: aringay}).bindPopup('ARINGAY.').addTo(map);
+		mAgoo = L.marker([16.336886, 120.361457], {icon: agoo}).bindPopup('AGOO.').addTo(map);
 		
 		
 		// Picture taking :)
