@@ -8,7 +8,9 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 		<link rel = "stylesheet" href = "rtbt_css/ViewBuses.css"/>
 		<link rel="stylesheet" href="rtbt_css/Core.css">
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+
 
 	</head>
 	
@@ -35,54 +37,93 @@
 
 </body>
 
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-<script type = "text/javascript">
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+<script>
+	var map = L.map('map').setView([16.481364, 120.339533], 12);
+	var you, circle, mSfc, mAringay, mAgoo;
+	
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
 
-
-    // Map initialization 
-    var map = L.map('map').setView([14.6760413, 121.0437003], 20);
-
-    //osm layer
-    var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    });
-    osm.addTo(map);
 
     if(!navigator.geolocation) {
-        console.log("Your browser doesn't support geolocation feature!")
+		alert("Your browser doesn't support geolocation feature!");
+        console.log("Your browser doesn't support geolocation feature!");
     } else {
         setInterval(() => {
-            navigator.geolocation.getCurrentPosition(getPosition)
-        }, 500);
+            navigator.geolocation.getCurrentPosition(getPosition);
+        }, 100);
     }
 
-    var marker, circle;
 
-    function getPosition(position){
-        // console.log(position)
-        var lat = position.coords.latitude
-        var long = position.coords.longitude
-        var accuracy = position.coords.accuracy
 
-        if(marker) {
-            map.removeLayer(marker)
+	
+
+function getPosition(position){
+	var lat = position.coords.latitude;
+    var long = position.coords.longitude;
+    var accuracy = position.coords.accuracy;
+	
+	
+        if(you) {
+            map.removeLayer(you);
         }
 
+        if(mSfc) {
+            map.removeLayer(mSfc);
+        }
+		
+		if(mAringay) {
+            map.removeLayer(mAringay);
+        }
+		
+		if(mAgoo) {
+            map.removeLayer(mAgoo);
+        }
+		
         if(circle) {
-            map.removeLayer(circle)
+            map.removeLayer(circle);
         }
+	
+	
+	
+	var Icons = L.Icon.extend({
+		options: {
+			iconSize:     [20, 20],
+			shadowSize:   [50, 64],
+			iconAnchor:   [22, 94],
+			shadowAnchor: [4, 62],
+			popupAnchor:  [-3, -76]
+		}
+	});
+	/*
+        circle = L.circle([lat, long], {
+			color: "#4285F0",
+			fillColor:"#4285F0",
+			fillOpacity: 0.2,
+			radius: 10
+			});
+	*/
+	
+	var userLocation = new Icons({iconUrl: 'rtbt_img/bus.png'});
+	var sfc = new Icons({iconUrl: 'rtbt_img/bus.png'});
+	var aringay = new Icons({iconUrl: 'rtbt_img/bus.png'});
+	var agoo = new Icons({iconUrl: 'rtbt_img/bus.png'});
 
-        marker = L.marker([lat, long])
-        circle = L.circle([lat, long], {radius: accuracy})
+		you = L.marker([lat, long]).bindPopup('ME.').addTo(map);
+		mSfc = L.marker([16.337894, 120.365706], {icon: sfc}).bindPopup('SFC.').addTo(map);
+		mAringay = L.marker([16.386607, 120.359545], {icon: aringay}).bindPopup('ARINGAY.').addTo(map);
+		mAgoo = L.marker([16.602034, 120.320641], {icon: agoo}).bindPopup('AGOO.').addTo(map);
+		
+		
+		// Picture taking :)
+        var featureGroup = L.featureGroup([you, mSfc, mAringay, mAgoo]).addTo(map);
+		//focuss the screen 
+        map.fitBounds(featureGroup.getBounds());
 
-        var featureGroup = L.featureGroup([marker, circle]).addTo(map)
-
-        map.fitBounds(featureGroup.getBounds())
-
-        console.log("Your coordinate is: Lat: "+ lat +" Long: "+ long+ " Accuracy: "+ accuracy)
+        console.log("Your coordinate is: Lat: "+ lat +" Long: "+ long+ " Accuracy: "+ accuracy);
     }
-
-
 </script>
 <script src = "rtbt_js/Core.js"></script>
 </html>
