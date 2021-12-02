@@ -40,7 +40,7 @@
 
 
     // Map initialization 
-    var map = L.map('map').setView([14.6760413, 121.0437003], 15);
+    var map = L.map('map').setView([14.6760413, 121.0437003], 20);
 
     //osm layer
     var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -53,7 +53,7 @@
     } else {
         setInterval(() => {
             navigator.geolocation.getCurrentPosition(getPosition)
-        }, 5000);
+        }, 500);
     }
 
     var marker, circle;
